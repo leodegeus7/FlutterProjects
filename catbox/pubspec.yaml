@@ -1,0 +1,23 @@
+name: catbox
+description: A new Flutter application.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+     - family: Ubuntu
+       fonts:
+           - asset: fonts/Ubuntu-Regular.ttf
+           - asset: fonts/Ubuntu-Bold.ttf
+
+  assets:
+     - assets/cats.json
