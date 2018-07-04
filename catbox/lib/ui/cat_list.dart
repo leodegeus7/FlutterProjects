@@ -30,6 +30,7 @@ class _CatListState extends State<CatList> {
 
   _navigateToCatDetails(Cat cat, Object avatarTag) {
     Navigator.of(context).push(
+
       new FadePageRoute(
           builder: (c) {
             return new CatDetailsPage(cat, avatarTag: avatarTag);

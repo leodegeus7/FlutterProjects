@@ -1,7 +1,9 @@
 import 'package:catbox/models/cat.dart';
+import 'package:catbox/ui/cat_details/details_body.dart';
+import 'package:catbox/ui/cat_details/header/details_header.dart';
+import 'package:catbox/ui/cat_details/footer/details_footer.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
-import 'package:catbox/ui/cat_details/header/details_header.dart';
 
 class CatDetailsPage extends StatefulWidget {
   final Cat cat;
@@ -25,9 +27,9 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
         end: FractionalOffset.bottomLeft,
         colors: [
           Colors.blue,
-          Colors.pink
-        ]
-      )
+          Colors.blue,
+        ],
+      ),
     );
 
     return new Scaffold(
@@ -36,8 +38,17 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
           decoration: linearGradient,
           child: new Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              new CatDetailHeader(widget.cat, avatarTag: widget.avatarTag)
+            children: [
+              new CatDetailHeader(
+                widget.cat,
+                avatarTag: widget.avatarTag,
+              ),
+              new Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: new CatDetailBody(widget.cat),
+              ), 
+              new CatShowcase(widget.cat)
+              //TODO Cat Showcase
             ],
           ),
         ),

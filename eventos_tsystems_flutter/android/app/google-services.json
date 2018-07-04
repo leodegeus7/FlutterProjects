@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "619099023329",
+    "firebase_url": "https://eventos-68d0a.firebaseio.com",
+    "project_id": "eventos-68d0a",
+    "storage_bucket": "eventos-68d0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619099023329:android:9245c8c6ea879506",
+        "android_client_info": {
+          "package_name": "com.tsystems.eventostsystemsflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619099023329-2rd8qrqpsbe04nn36l0168d0ais6jr51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7ZvVC903xKaNk4ZPcxv4xlPy9bF0hD_0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

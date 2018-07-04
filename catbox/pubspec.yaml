@@ -21,3 +21,4 @@ flutter:
 
   assets:
      - assets/cats.json
+     - assets/profile_header_background.png
